@@ -52,4 +52,6 @@ Rails.application.routes.draw do
   get("/roll/3/20", { :controller => "dice", :action => "three_twenty" })
 
   get("/roll/:number_of_dice/:number_of_sides", { :controller => "dice", :action => "infinity_and_beyond" })
+  get("/zodiacs/:the_sign", { :controller => "fortunes", :action => "horoscopes" })
+
 end
